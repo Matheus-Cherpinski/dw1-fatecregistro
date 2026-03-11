@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outras mídias no HTML5</title>
+</head>
+<body>
+   <header>
+    <h1>Outras Mídias no HTML5</h1>
+   </header> 
+   <main>
+    <section>
+        <h2>Áudio</h2>
+        <audio controls src="midias/audio.mp3"></audio>
+        <!-- src (souce) origem -->
+         <h2>vídeo</h2>
+         <video controls src="midias/video.mp4" type=""vídeo/mp4 width="400px">
+            video nao encontrado ou nao suportado
+        </video>
+   <h2>vídeo no youtube (externo) - iFrame</h2>
+   <iframe 
+   src="https://youtu.be/9h1l5Z0mH0w?si=EK7MsgBvG1nSxx1m" 
+   title="exemplo de vídeo do youtube"
+    width="560px"
+height="315px"
+   frameborder="0">
+</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9h1l5Z0mH0w?si=TqU157AbTCjva467" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- incorporando mapas   -->
+ <h2>mapas (iframe)</h2>
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58104.23107145617!2d-47.85072864339393!3d-24.467626115876634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c53436f4f0c1cb%3A0xbab60b5cc9451e73!2sRegistro%2C%20SP%2C%2011900-000!5e0!3m2!1spt-BR!2sbr!4v1773192607236!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+
+ <!-- incorporando pdf -->
+  <h2>PDF iframe</h2>
+  <iframe 
+  src="midias/documento.pdf"
+  title="Horarios DSM1"
+  width="600px"
+  height="450px"
+  frameborder="0"></iframe>
+<!-- incorporando vetores -->
+ <h2>vetores (ilustrações)</h2>
+ <!-- tipo de vetor que nao perde a qualidade -->
+  <svg width="300" height="200" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.9 1.35C12.5 1.29024 11.1223 1.71591 10 2.555C8.87771 1.71591 7.50002 1.29024 6.1 1.35C2.2 1.35 0.25 3.69 0.25 7.2C0.25 12.595 5.25 16.335 9.06 18.41C9.34826 18.5675 9.6715 18.6501 10 18.6501C10.3285 18.6501 10.6517 18.5675 10.94 18.41C14.775 16.335 19.75 12.595 19.75 7.2C19.75 3.69 17.8 1.35 13.9 1.35Z" fill="#FF52A1" stroke="#231F20" stroke-width="0.5" stroke-miterlimit="10"/>
+<path d="M14.18 3.355C16.37 3.125 17.135 4.35501 17.45 5.23501" stroke="white" stroke-width="0.5" stroke-miterlimit="10" stroke-linecap="round"/>
+</svg>
+
+</section>
+   </main>
+</body>
+</html>
