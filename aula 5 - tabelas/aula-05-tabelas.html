@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+<header>   
+     <h1>Tabelas no HTML5:</h1>
+</header>
+<main>
+    <!-- estrutura mínima de uma tabela -->
+    <h3>Estrutura Mínima</h3>
+    <table border="1">
+        <!-- linha 1 -->
+        <tr>
+            <td>Dado 1</td>
+            <td>Dado 2</td>
+            <td>Dado 3</td>
+            <td>Dado 4</td>
+        </tr>
+        <!-- linha 2 -->
+        <tr>
+            <td>Dado 5</td>
+            <td>Dado 6</td>
+            <td>Dado 7</td>
+            <td>Dado 8</td>
+            <!-- shift + alt acrescenta uma nova linha igual a linha selecionada -->
+        </tr>
+     </table>
+     <h3>Tabela com cabeçalhos</h3>
+     <table border="1">
+        <!-- linha 1 -->
+     <tr>
+        <th>produto</th>
+        <th>preço</th>
+        </th>
+        <!-- linha 2 -->
+        <tr>
+            <td>Notebook</td>
+            <td>R$ 3000</td>
+        </tr>
+    </table>
+
+    <h3>taberla com título</h3>
+    <table border="1">
+        <caprtion>Tabela de preços</caprtion>
+        <!-- linha 1 -->
+         <tr>
+            <th>serviço</th>
+            <th>valor</th>
+         </tr>
+         <tr>
+            <td>preço residencial</td>
+            <td>R$ 2500</td>
+        </tr>
+        </table>
+     
+        <h3>tabela com estrutura semantica</h3>
+        <table border="1">
+            <caption>
+             <!-- header -->
+                <thead>
+                    <tr>
+                        <th>produto</th>
+                        <th>Quantidade </th>
+                        <th>valor</th>
+                    </tr>
+                </thead>
+                <!-- body -->
+                 <tbody>
+                    <tr>
+                        <td>Mouse</td>
+                        <td>10</td>
+                        <td>R$ 20</td>
+                    </tr>
+                 </tbody>
+                 <!-- footer -->
+                  <tfoot>
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td>R$ 200</td>
+                    </tr>
+                  </tfoot>
+                  <h3>mesclando linhas</h3>
+                  <table border="1">
+                    <caption>vendas do mês</caption>
+                    <!-- header -->
+<thead>
+    <tr></tr>
+        <th>Produto</th>
+        <th>Quantidade</th>
+        <th>Valor</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td rowspan="2">Mouse</td>
+        <td>10</td>
+        <td>R$ 20</td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>R$ 25</td>
+    </tr>
+</tbody>
+<!-- footer -->
+<tfoot>
+    <tr>
+        <td colspan="2">Total</td>
+        <td>R$ 700</td>
+    </tr>
+        </table>
+
+        <h3>tabela com atributo SCOPE:</h3>
+        <table border="1">
+            <caption>Notas dos alunos por disciplinas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Aluno</th>
+                    <th scope="col">Desenvolvimento web</th>
+                    <th scope="col">Desing digital</th>
+                    <th scope="col">Banco de dados</th>
+                    <th scope="col">Algoritmos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Ana</th>
+                    <td>8.5</td>
+                    <td>9.0</td>
+                    <td>7.0</td>
+                    <td>8.0</td>
+                </tr>
+                <tr>
+                    <th scope="row">Bruno</th>
+                    <td>7.5</td>
+                    <td>8.0</td>
+                    <td>10.0</td>
+                    <td>9.0</td>
+                </tr>
+                <tr>
+                    <th scope="row">carlos</th>
+                    <td>9.5</td>
+                    <td>10.0</td>
+                    <td>9.0</td>
+                    <td>8.0</td>
+                </tr>
+            </tbody>
+        </table>
+        
+
+    </main>
+</body>
+</html>
