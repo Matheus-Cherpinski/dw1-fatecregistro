@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro de aluno - Curso DSM</title>
+</head>
+<body>
+    <main>
+        <h1>Cadastro de aluno - DSM</h1>
+<p>este Formulário é designado para os alunos de DSM. Os dados serão recolhidos serão usados para cadastrar o aluno no sistema para que ele possa ser avaliado</p>
+<form action="#" method="post">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nome">Nome completo</label>
+        <input type="text" name="nome" id="nome"><br>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" required><br>
+        <label for="date">Data de nascimento</label>
+        <input type="date" name="Data" id="data">
+    </fieldset>
+    <fieldset>
+        <legend>Dados Acadêmicos</legend>
+        <label for="text">Curso</label>
+        <select name="curso" id="curso">
+      <option value="text">DSM</option>
+      <option value="text">ADS</option>
+      <option value="text">GE</option>
+      </select>
+      <label for="sexo">Período:</label><br>
+                    <input type="radio" name="Período" id="masculino" value="m"> manhã
+                    <input type="radio" name="Período" id="feminino" value="n"> noite
+    </fieldset>
+    <textarea name="comentarios" id="comentários">Comentários</textarea><br>
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+</form>
+    </main>
+</body>
+</html>
